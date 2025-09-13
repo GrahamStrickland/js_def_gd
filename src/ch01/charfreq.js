@@ -68,7 +68,7 @@ class Histogram {
 
     // Now convert each entry to a line of text
     let lines = entries.map(
-      ([l, n]) => '${l}: ${"#".repeat(Math.round(n))} ${n.toFixed(2)}%'
+      ([l, n]) => `${l}: ${"#".repeat(Math.round(n))} ${n.toFixed(2)}%`
     );
 
     // And return the concatenated lines, separated by newline characters.
